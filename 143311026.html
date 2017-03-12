@@ -1,0 +1,152 @@
+<DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Sayfası</title>
+<style type="text/css">
+  form {
+    width: 580px;
+    margin: 0 auto;
+  }
+  label{
+    text-align: right;
+    width: 200px;
+    display: inline-block;
+  }
+  p{
+    text-align: center;
+  }
+  form table{
+    width: 100%;
+  }
+</style>
+</head>
+<body>
+<form>
+  <fieldset style="border-color: #9922B7;">
+    <legend style="font-weight: bold;">Üye Kayıt Formu</legend>
+      <table>
+        <tr>
+          <td>
+            <label>Adınız :</label>
+          </td>
+          <td>
+            <input type="text" name="ad"> *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Soyadınız :</label>
+          </td>
+          <td>
+            <input type="text" name="soyad"> *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Şehir :</label>
+          </td>
+          <td>
+            <select name="sehir">
+              <option value="seciniz">Seçiniz...</option>
+              <option value="hatay">Hatay</option>
+              <option value="konya">Konya</option>
+              <option value="istanbul">İstanbul</option>
+            </select> *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Meslek :</label>
+          </td>
+          <td>
+            <select name="meslek">
+              <option value="seciniz">Seçiniz...</option>
+              <option value="hatay">Mühendis</option>
+              <option value="konya">Doktor</option>
+              <option value="istanbul">Öğretmen</option>
+            </select> *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Doğum Yılınız :</label>
+          </td>
+          <td>
+            <input style="border-color: #D8D7D8;" type="text" name="Dyili"> (Örn: 1978) *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Cinsiyetniz : </label>
+          </td>
+          <td>
+            <input type="radio" name="gender" value="male" checked=""> BAY
+            <input type="radio" name="gender" value="female"> BAYAN
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Adres :</label>
+          </td>
+          <td>
+            <textarea name="mesaj" rows="3"></textarea> * (Mak. 250 Karakter)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label >E-Posta Adresiniz :</label>
+          </td>
+          <td>
+            <input  style="border-color: #D8D7D8;" type="text" name="email"> *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>E-Posta (Tekrar) :</label>
+          </td>
+          <td>
+            <input style="border-color: #D8D7D8;" type="text" name="emailT"> *
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Kuruluşunuzun Adı :</label>
+          </td>
+          <td>
+            <input type="text" name="kurulus">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>MSN Adresiniz :</label>
+          </td>
+          <td>
+            <input style="border-color: #D8D7D8;" type="text" name="msn">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Kullanıcı Adınız :</label> 
+          </td>
+          <td>
+            <input style="border-color: #D8D7D8; border-style: dotted;" type="text" name="Kadi" required> * (Yalnız Küçük Harf)
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Parolanız :</label>
+          </td>
+          <td>
+            <input style="border-color: #D8D7D8; border-style: dotted;" type="password" name="parola"> * (Minimum 8 Karakter)
+          </td>
+        </tr>
+      </table>
+      <p>Kullanıcı Adı Alanı En Az 4, En Çok 12 Karakter Olmalıdır !</p>
+      <p>Lütfen (*) İşaretli Alanları Eksiksiz Olarak Doldurunuz !</p>
+      <p><input style="font-weight: bold;"  type="submit" value="Üyelik Bilgilerimi Kaydet"></p>
+      <p>[ <a href="#">Üye Giriş Sayfası</a> ]</p>
+  </fieldset>
+</form>
+</body>
+</html>
